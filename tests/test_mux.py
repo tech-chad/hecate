@@ -74,7 +74,7 @@ def test_can_capture_a_pane():
     assert len(panes) == 1
     pane_contents = mux.capture_pane(panes[0])
     assert "hello world" in pane_contents
-    assert len(pane_contents.split("\n")) == 50
+    assert len(pane_contents.split("\n")) == 50 + 1
 
 
 def test_can_send_content_to_the_screen():
